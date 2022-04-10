@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+body {
+	background-color: #f9f9f9;
+}
+.navbar img {
+	display: block;
+	padding-top: 18px;
+}
+@media (min-width: 768px){
+	.flip-card {
+		height: 25vw;
+	}
+}
+@media (max-width: 767px){
+	.flip-card {
+		height: 50vw;
+	}
+	.auth-content {
+		margin: 1em auto 0;
+	}
+}
+.sube_contenedor {
+	background-color: #FFF;
+	border-radius: .5em;
+	padding: 1.2em;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	border: 1px solid #eee;
+}
+.sube_contenedor h3 {
+	font-weight: bold;
+}
+.sube_contenedor h5 {
+	font-weight: normal;
+	color: #aaaaaa;
+}
+.sube_contenedor label.use {
+	color: #bdbdbd;
+	font-size: .8em;
+}
+.sube_contenedor input.use {
+	border: 0;
+	border-bottom: 2px solid #0083c0;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+.sube_contenedor input.use:focus {
+	outline: none;
+}
+.sube_contenedor small.use {
+	color: #bdbdbd;
+	font-size: .8em;
+}
+
+button {
+	background-color: #0083c0;
+	border: none;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: .2em;
+	padding: .2em .7em;
+}
+button img {
+	max-width: .8em;
+	margin-left: .3em;
+}
+.auth-content {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.auth-content h1 {
+	font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	font-size: 1.2em;
+	line-height: 1.17;
+	font-weight: 600;
+	letter-spacing: -.1px;
+}
+.auth-content h1 span {
+	font-size: .8em;
+	font-weight: normal;
+}
+.auth-content p {
+	color: #212529;
+}
+.auth-content a {
+	min-width: 142px;
+	line-height: 1;
+	background-color: #009ee3;
+	color: #fff;
+	transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	margin-top: 1.5em;
+	padding: .8em ;
+	width: 100%;
+	border-radius: .2em;
+}
+.auth-content a:hover {
+	text-decoration: none;
+	background-color: #007eb5;
+}
+.auth-content button {
+	min-width: 142px;
+	line-height: 1;
+	background-color: #009ee3;
+	color: #fff;
+	transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	margin-top: 1.5em;
+	padding: .8em ;
+	width: 75%;
+	border: none;
+	border-radius: .2em;
+}
+.auth-content button:hover {
+	background-color: #007eb5;
+}
+.auth-content .custom-file-upload {
+	min-width: 142px;
+	line-height: 1;
+	background-color: #009ee3;
+	color: #fff;
+	transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	margin-top: 1.5em;
+	padding: .8em ;
+	width: 75%;
+	border: none;
+	border-radius: .2em;
+}
+.auth-content .custom-file-upload:hover {
+	background-color: #007eb5;
+}
+
+.auth-login {
+	margin: 55px auto 0;
+	padding: 5%;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.auth-login h1 {
+	font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	font-size: 1.5em;
+	line-height: 1.17;
+	font-weight: 600;
+	letter-spacing: -.1px;
+}
+.auth-login .input {
+	width: 75%;
+	margin: 3em auto;
+}
+.auth-login button {
+	min-width: 142px;
+	line-height: 1;
+	background-color: #009ee3;
+	color: #fff;
+	transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	margin-top: 1.5em;
+	padding: .8em ;
+	width: 75%;
+	border: none;
+	border-radius: .2em;
+}
+.auth-login button:hover {
+	background-color: #007eb5;
+}
+.input * {
+	transition: all .3s;
+}
+.input {
+	position: relative;
+	padding-top: 1.2em;
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid rgba(0,0,0,.25);
+	margin-bottom: 1.2em;
+	overflow-x: hidden;
+}
+.error.input::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid red;
+}
+.input label {
+	position: absolute;
+	cursor: text;
+	top: 1.2em;
+	color: rgba(0,0,0,.45);
+	white-space: nowrap;
+}
+.input input {
+	border: none;
+	width: 100%;
+	height: 100%;
+	box-shadow: none!important;
+}
+.input small{
+	color: red;
+}
+.input small.hide {
+	display: none;
+}
+.input small.show {
+	display: block;
+}
+
+.input.focus {
+	border-bottom: 1px solid rgba(0,0,0,.5);
+}
+.input.focus label {
+	top: 0;
+	font-size: .9em;
+}
+.user-badge {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 50px;
+}
+.user-badge p {
+	padding: 0;
+	margin: 0 .5em;
+}
+.user-badge a {
+	position: relative;
+	padding: 0 .7em 0 .7em;
+	border-radius: 50px;
+	margin-right: .1em;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.user-badge a:hover {
+	background-color: rgba(0,0,0,.07);
+}
+.close {
+	position: absolute;
+}
+.close::before {
+	content: "";
+	display: block;
+	width: .75rem;
+	height: .0625rem;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -.375rem;
+	transform: rotate(45deg);
+}
+.close::after {
+	content: "";
+	display: block;
+	width: .75rem;
+	height: .0625rem;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -.375rem;
+	transform: rotate(-45deg);
+}
+svg {
+	max-width: 100%;
+	height: 100%;
+}
+.cls-1 {
+	font-size: 48px;
+}
+
+.cls-1, .cls-2 {
+	fill: #777;
+	font-family: "Roboto Mono";
+}
+
+.cls-2 {
+	font-size: 36px;
+}
+.cls-3 {
+	position: relative;
+	text-align: center;
+	-webkit-transition: color .3s ease-in;
+	transition: color .3s ease-in;
+	fill: #f7f7f7;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(.1em,#999),color-stop(.7em,#fff));
+	background: -webkit-linear-gradient(top,#999 .1em,#fff .7em);
+	    background-clip: border-box;
+	background: linear-gradient(180deg,#999 .1em,#fff .7em);
+	    background-clip: border-box;
+	-webkit-background-clip: text;
+	background-clip: text;
+	letter-spacing: 2px;
+	-webkit-filter: drop-shadow(0 1px 1px #000);
+	filter: drop-shadow(0 1px 1px black);
+	-webkit-text-fill-color: transparent;
+}
+
+input:focus {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card.flip .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+.flip-card-back {
+	transform: rotateY(180deg);
+}
+.center-all {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.auth-content {
+	position: relative;
+}
+.auth-content .loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255,255,255,.7);
+	z-index: 999999999999999;
+}
+
+svg.success-icon {
+	height: 100%;
+	max-width: 30%;
+	margin-top: 10%;
+}
+
+
+.flex-direction-column {
+	flex-direction: column;
+}
